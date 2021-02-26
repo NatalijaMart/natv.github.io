@@ -1,0 +1,103 @@
+
+body {
+    font-size: 16px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+    font-family: Roboto;
+
+    width: 600px;
+    margin: auto;
+    background-color: white;
+   
+    border: 1px solid black;
+
+    
+  }
+  
+
+H1 {
+  text-align:center;
+  font-size: x-large
+  height: 100px;
+}
+
+
+H4 {
+  text-align:center;
+}
+  /* дизайн самой таблички  */
+   
+    .wrapper {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+  }
+
+  /* расположение строк боксов  */
+  .form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+
+   
+
+
+  /* дизайн ячейки надписи */
+  .form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+
+  /* дизайн ячейки заполнения */
+  .form-row > input {
+    flex: 2;
+    padding: .5em;
+  }
+
+  /* дизайн ячейки зкнпки  */
+  .form-row > input
+  {
+    padding: .5em;
+    
+  }
+
+  .form-row > button {
+    padding: .5em;
+    flex: 1;
+    font-size: 25px; bol
+    font-family: Roboto;
+      
+      height: 100px;
+    }
+  }
+  .form-row > button {
+         .btn:hover {
+      background: #e8ebea; /* Цвет фона при наведении курсора */
+     }
+     .btn-flat {
+      border: 1px transparent; /* Прозрачная рамка */
+     }
+     .btn-round {
+      border-radius: 20px; /* Радиус скругления */
+     }
+
+
+
+
+     
+  }
+  @media screen and (min-width: 768px) {
+    .form-row > input {
+      flex: 3; 
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .form-row > input {
+      flex: 4; 
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .form-row > input {
+      flex: 5; 
+    }
+  }
